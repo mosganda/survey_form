@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel= "stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">Bikonnet Survey Form</h1>
+        <hr style="color: white;">
+        <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+            <form id="survey-form" action="">
+                <p>Name:
+                <label for="name-label">
+                  <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                  <label>
+                    </p>
+                
+              <p>Email:
+                <label for="email-label">
+                  <input type="email" id="email" name="email"  placeholder="Enter your Email" required/>
+                </label></p>
+            <p>Number:
+              <label for="number-label">
+                <input type="number" id="number" min="5" max="100" placeholder="Age" required/>
+              </label></p>
+                <p>Which option best describes your current role?</P>
+              <p>
+                  <input type="text" list="dropdown" placeholder="select your role"/>
+                  <datalist id="dropdown">
+                    <option value="student"></option>
+                    <option value="full-time job"></option>
+                    <option value="full-time learner"></option>
+                    <option value="prefer not to say"></option>
+                    <option value="other"></option>
+                  </datalist>
+                </p>
+              <p>Would you recommend Bikonnet to a friend?</p>
+              <p>
+                <label for="definitely">
+                  <input type="radio" id="definitely" name="recommend" value="definitely"checked>Definitely
+                </label>
+                
+              </p>
+              <p>
+              <label for="maybe">
+                  <input type="radio" id="maybe" name="recommend" value="maybe">Maybe
+                </label></p>
+                <p>
+              <label for="not-sure">
+                  <input type="radio" id="not-sure" name="recommend" value="not-sure">Not Sure
+                </label></p>
+              <!--field for checkboxes-->
+              <p>What would you like to see improved? (Check all that apply)</p>
+              <p>
+                <label for="front-end-projects">
+                  <input type="checkbox" id="front-end-projects" name="improvement" value="front-end-development">Front End Development
+                </label>
+              </p>
+              <p>
+                <label for="back-end-projects">
+                  <input type="checkbox" id="back-end-projects" name="improvement" value="back-end-development">Back End Development
+                </label>
+              </p>
+              <p>
+                <label for="data-visualization">
+                  <input type="checkbox" id="data-visualization" name="improvement" value="data-visualization">Data Visualization
+                </label>
+              </p>
+              
+              <p>
+                <label for="challenges">
+                  <input type="checkbox" id="challenges" name="improvement" value="challenges">Challenges
+                </label>
+              </p>
+              
+              <p>
+                <label for="open-source-community">
+                  <input type="checkbox" id="open-source-community" name="improvement" value="open-source-community">Open Source Community
+                </label>
+              </p>
+              
+              <p>
+                <label for="gitter-help-rooms">
+                  <input type="checkbox" id="gitter-help-rooms" name="improvement" value="gitter-help-rooms">Gitter Help Rooms
+                </label>
+              </p>
+              
+              <p>
+                <label for="videos">
+                  <input type="checkbox" id="videos" name="improvement" value="videos">Videos
+                </label>
+              </p>
+              
+              <p>
+                <label for="city-meetups">
+                  <input type="checkbox" id="city-meetups" name="improvement" value="city-meetups">City Meetups
+                </label>
+              </p>
+              
+              <p>
+                <label for="wiki">
+                  <input type="checkbox" id="wiki" name="improvement" value="wiki">Wiki
+                </label>
+              </p>
+              
+              <p>
+                <label for="forum">
+                  <input type="checkbox" id="forum" name="improvement" value="forum">Forum
+                </label>
+              </p>
+              
+              <p>
+                <label for="additional-courses">
+                  <input type="checkbox" id="additional-courses" name="improvement" value="additional-courses">Additional Courses
+                </label>
+              </p>
+              <!--field for textarea-->
+              <p>Any comments or suggestions?</p>
+              <p>
+              <textarea id="t-area">Enter your comment here
+                
+              </textarea>
+              </p>
+              <p>
+                <button id="submit" value="submit">submit</button>
+              </p>
+              
+              
+              
+            
+            
+            
+           </form>
+       </main>
+</body>
+</html>
